@@ -1,0 +1,210 @@
+
+projeckt.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  00000140  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000000ec  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  00000140  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00000170  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000058  00000000  00000000  000001b0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000009cb  00000000  00000000  00000208  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000893  00000000  00000000  00000bd3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000002d4  00000000  00000000  00001466  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000094  00000000  00000000  0000173c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000433  00000000  00000000  000017d0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_ranges 00000048  00000000  00000000  00001c03  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	4b c0       	rjmp	.+150    	; 0x9c <__bad_interrupt>
+   6:	00 00       	nop
+   8:	49 c0       	rjmp	.+146    	; 0x9c <__bad_interrupt>
+   a:	00 00       	nop
+   c:	47 c0       	rjmp	.+142    	; 0x9c <__bad_interrupt>
+   e:	00 00       	nop
+  10:	45 c0       	rjmp	.+138    	; 0x9c <__bad_interrupt>
+  12:	00 00       	nop
+  14:	43 c0       	rjmp	.+134    	; 0x9c <__bad_interrupt>
+  16:	00 00       	nop
+  18:	41 c0       	rjmp	.+130    	; 0x9c <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	3f c0       	rjmp	.+126    	; 0x9c <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	3d c0       	rjmp	.+122    	; 0x9c <__bad_interrupt>
+  22:	00 00       	nop
+  24:	3b c0       	rjmp	.+118    	; 0x9c <__bad_interrupt>
+  26:	00 00       	nop
+  28:	39 c0       	rjmp	.+114    	; 0x9c <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	37 c0       	rjmp	.+110    	; 0x9c <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	35 c0       	rjmp	.+106    	; 0x9c <__bad_interrupt>
+  32:	00 00       	nop
+  34:	33 c0       	rjmp	.+102    	; 0x9c <__bad_interrupt>
+  36:	00 00       	nop
+  38:	31 c0       	rjmp	.+98     	; 0x9c <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	2f c0       	rjmp	.+94     	; 0x9c <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	2d c0       	rjmp	.+90     	; 0x9c <__bad_interrupt>
+  42:	00 00       	nop
+  44:	2b c0       	rjmp	.+86     	; 0x9c <__bad_interrupt>
+  46:	00 00       	nop
+  48:	29 c0       	rjmp	.+82     	; 0x9c <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	27 c0       	rjmp	.+78     	; 0x9c <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	25 c0       	rjmp	.+74     	; 0x9c <__bad_interrupt>
+  52:	00 00       	nop
+  54:	23 c0       	rjmp	.+70     	; 0x9c <__bad_interrupt>
+  56:	00 00       	nop
+  58:	21 c0       	rjmp	.+66     	; 0x9c <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	1f c0       	rjmp	.+62     	; 0x9c <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	1d c0       	rjmp	.+58     	; 0x9c <__bad_interrupt>
+  62:	00 00       	nop
+  64:	1b c0       	rjmp	.+54     	; 0x9c <__bad_interrupt>
+  66:	00 00       	nop
+  68:	19 c0       	rjmp	.+50     	; 0x9c <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	17 c0       	rjmp	.+46     	; 0x9c <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	15 c0       	rjmp	.+42     	; 0x9c <__bad_interrupt>
+  72:	00 00       	nop
+  74:	13 c0       	rjmp	.+38     	; 0x9c <__bad_interrupt>
+  76:	00 00       	nop
+  78:	11 c0       	rjmp	.+34     	; 0x9c <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	0f c0       	rjmp	.+30     	; 0x9c <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	0d c0       	rjmp	.+26     	; 0x9c <__bad_interrupt>
+  82:	00 00       	nop
+  84:	0b c0       	rjmp	.+22     	; 0x9c <__bad_interrupt>
+  86:	00 00       	nop
+  88:	09 c0       	rjmp	.+18     	; 0x9c <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e4       	ldi	r29, 0x40	; 64
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+  98:	1c d0       	rcall	.+56     	; 0xd2 <main>
+  9a:	26 c0       	rjmp	.+76     	; 0xe8 <_exit>
+
+0000009c <__bad_interrupt>:
+  9c:	b1 cf       	rjmp	.-158    	; 0x0 <__vectors>
+
+0000009e <debugLED>:
+void stopSiren() {
+	
+}
+
+void debugLED(bool on) {
+	if (on) {
+  9e:	88 23       	and	r24, r24
+  a0:	11 f0       	breq	.+4      	; 0xa6 <debugLED+0x8>
+		PORTD |= 0b01000000;
+  a2:	5e 9a       	sbi	0x0b, 6	; 11
+  a4:	08 95       	ret
+	} else {
+		PORTD &= 0b10111111;
+  a6:	5e 98       	cbi	0x0b, 6	; 11
+  a8:	08 95       	ret
+
+000000aa <getSensorInput>:
+}
+
+// loop through and get sensor input
+void getSensorInput() {
+	// Start an ADC conversion by setting ADSC bit (bit 6)
+	ADCSRA = ADCSRA | (1 << ADSC);
+  aa:	ea e7       	ldi	r30, 0x7A	; 122
+  ac:	f0 e0       	ldi	r31, 0x00	; 0
+  ae:	80 81       	ld	r24, Z
+  b0:	80 64       	ori	r24, 0x40	; 64
+  b2:	80 83       	st	Z, r24
+	
+	// Wait until the ADSC bit has been cleared
+	while(ADCSRA & (1 << ADSC));
+  b4:	80 81       	ld	r24, Z
+  b6:	86 fd       	sbrc	r24, 6
+  b8:	fd cf       	rjmp	.-6      	; 0xb4 <getSensorInput+0xa>
+
+	if(ADCH > 20)
+  ba:	80 91 79 00 	lds	r24, 0x0079	; 0x800079 <__TEXT_REGION_LENGTH__+0x7e0079>
+  be:	85 31       	cpi	r24, 0x15	; 21
+  c0:	20 f0       	brcs	.+8      	; 0xca <getSensorInput+0x20>
+	{
+		// Turn LED on
+		debugLED(false);
+  c2:	80 e0       	ldi	r24, 0x00	; 0
+  c4:	90 e0       	ldi	r25, 0x00	; 0
+  c6:	eb cf       	rjmp	.-42     	; 0x9e <debugLED>
+  c8:	08 95       	ret
+
+	}
+	else
+	{
+		// Turn LED off
+				debugLED(true);
+  ca:	81 e0       	ldi	r24, 0x01	; 1
+  cc:	90 e0       	ldi	r25, 0x00	; 0
+  ce:	e7 cf       	rjmp	.-50     	; 0x9e <debugLED>
+  d0:	08 95       	ret
+
+000000d2 <main>:
+{
+	
+	bool alarmOn = false;
+	int code[4] = {0, 4, 2, 1};
+	//output	
+	DDRD = 0xff;
+  d2:	8f ef       	ldi	r24, 0xFF	; 255
+  d4:	8a b9       	out	0x0a, r24	; 10
+	
+	//init input
+	// Configure PORT C bit 0     to an input
+	DDRC = 0x00;
+  d6:	17 b8       	out	0x07, r1	; 7
+
+	// Configure ADC to be left justified, use AVCC as reference, and select ADC0 as ADC input
+	ADMUX = 0b01000000;
+  d8:	80 e4       	ldi	r24, 0x40	; 64
+  da:	80 93 7c 00 	sts	0x007C, r24	; 0x80007c <__TEXT_REGION_LENGTH__+0x7e007c>
+
+	// Enable the ADC and set the prescaler to max value (128)
+	ADCSRA = 0b10000111;
+  de:	87 e8       	ldi	r24, 0x87	; 135
+  e0:	80 93 7a 00 	sts	0x007A, r24	; 0x80007a <__TEXT_REGION_LENGTH__+0x7e007a>
+   
+    /* Replace with your application code */
+    while (1) 
+    {
+		getSensorInput();
+  e4:	e2 df       	rcall	.-60     	; 0xaa <getSensorInput>
+  e6:	fe cf       	rjmp	.-4      	; 0xe4 <main+0x12>
+
+000000e8 <_exit>:
+  e8:	f8 94       	cli
+
+000000ea <__stop_program>:
+  ea:	ff cf       	rjmp	.-2      	; 0xea <__stop_program>
